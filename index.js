@@ -22,7 +22,10 @@ const PORT = PORT_NUMBER;
 const app = express();
 
 // allowed origins
-var allowedOrigins = ["http://localhost:3000"];
+var allowedOrigins = [
+  "http://localhost:3000",
+  "https://schedule-management.vercel.app",
+];
 
 // cors setup
 app.use(
