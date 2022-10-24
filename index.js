@@ -83,7 +83,7 @@ const startServer = async () => {
     });
 };
 
-app.use("/", () => {
+app.use("/", (req, res) => {
   res
     .status(STATUS_CODES.SUCCESS.SUCCESSFUL_REQUEST)
     .json({ message: "API by theunicorndev" });
